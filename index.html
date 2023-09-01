@@ -12,55 +12,62 @@
             padding: 0;
             text-align: center;
         }
-
+    
         header {
             background-color: #ff0000; /* Red background color */
             color: #fff; /* White text color */
             padding: 20px;
+            display: flex;
+            align-items: center;
         }
-
+    
         h1 {
             font-size: 36px;
+            margin: 0; /* Reset margin to center-align text */
+            flex: 1;
         }
-
+    
         p {
             font-size: 18px;
+            margin: 0; /* Reset margin */
         }
-
+    
+        .logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+            margin-left: 20px; /* Add some margin to the left */
+        }
+    
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #dddddd;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Adjust text alignment for container content */
+            margin-right: 480px;
         }
     </style>
+    
 </head>
 <body>
     <header>
-        <h1>Welcome to RedPaw Games</h1>
-        <p>Your Indie Game Adventure Begins Here</p>
+        <img src="redpawlogo.png" alt="RedPaw Games Logo" class="logo">
+        <h1>RedPaw Games</h1>
     </header>
 
     <div class="container">
         <h2>About Us</h2>
         <p>
-            RedPaw Games is an indie game studio dedicated to creating unique and exciting gaming experiences. 
-            With a passion for creativity and a love for games, we strive to deliver memorable adventures to players 
-            around the world.
+            RedPaw Games is an indie game studio dedicated to creating unique and exciting gaming experiences with Cats. 
+            With a passion for creativity and a love for Cats, we strive to deliver memorable adventures to players 
+            around the world and their Cats.
         </p>
 
         <h2>Our Games</h2>
         <p>
-            Explore our catalog of games, from thrilling action adventures to mind-bending puzzles. 
-            We take pride in crafting games that challenge your skills, ignite your imagination, and keep you 
-            entertained for hours.
-        </p>
-
-        <h2>Contact Us</h2>
-        <p>
-            Have questions or want to get in touch? Feel free to contact us at <a href="mailto:info@redpawgames.com">info@redpawgames.com</a>.
+            We make Cat Games. Because everyone likes Cats!
         </p>
     </div>
 </body>
