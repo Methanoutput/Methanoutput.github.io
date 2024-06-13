@@ -1,24 +1,27 @@
 html {
     font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
     font-family: "Tiny5", sans-serif; /* this should be the rest of the output you got from Google Fonts */
+    background-color: #c59999;
 }
 
 body {
-    font-family: "Tiny5", sans-serif;
-    background-color: #c59999;
-    margin: 0;
-    padding: 0;
+    width: 600px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
 }
 
 h1 {
-    color: #fab387;
-    text-align: left;
-    margin-top: 9px;
+    font-size: 60px;
+    text-align: center;
 }
 
 h2 {
     color: #fab387;
+    background-color: blue;
     text-align: left;
+    width: 280px;
 }
 
 h3 {
@@ -31,7 +34,9 @@ h4 {
     text-align: left;
 }
 
-p {
-    text-align: left;
-    color: #f5e0dc;
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
 }
