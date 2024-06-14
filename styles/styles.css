@@ -36,6 +36,11 @@ h4 {
     text-align: left;
 }
 
+img{
+    display: block;
+    margin: 0 auto;
+}
+
 p,
 li {
     font-size: 16px;
