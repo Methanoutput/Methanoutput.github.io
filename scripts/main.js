@@ -1,29 +1,31 @@
-const myHeading = document.querySelector("h1");
-myHeading.textContent = "Bye Bye : World!";
+const myImage = document.querySelector("img");
 
-// Funktion zur Generierung einer zufälligen Farbe
-function generateRandomColor() {
-    const randomColor = Math.floor(Math.random() * 0xFFFFFF);
-    const hexString = "#" + randomColor.toString(16).padStart(6, '0');
-    return hexString;
+let myButton = document.querySelector("button");
+let myHeading = document.querySelector("h1");
+
+function setUserName(){
+    const myName = prompt("please enter your name.");
+    localStorage.setItem("name", myName);
+    myHeading.textContent = `${myName} ist using arch btw`;
 }
 
-document.querySelector("html").addEventListener("click", function () {
-    // Zufällige Farbe generieren und setzen
-    const hexColor = generateRandomColor();
-    document.querySelector("body").style.backgroundColor = hexColor;
-});
-  
+if(!localStorage.getItem("name")){
+    setUserName();
+} else{
+    const storedName = localStorage.getItem("name");
+    myHeading.textContent = `${storedName} ist using arch btw`;
+}
 
-/* 
-    i
-    am
-    a
-    comment
-*/
+myImage.onclick = () => {
+    const mySrc = myImage.getAttribute("src");
+    if(mySrc === "images/turtle.jpg"){
+        myImage.setAttribute("src", "images/dolphin.jpg");
+    }
+    else{
+        myImage.setAttribute("src", "images/turtle.jpg");
+    }
+};
 
-// this is also a comment
-
-let myVariable = "i am using arch btw.";
-
-// alert(myVariable); // -> makes super sketchy pop up.
+myButton.onclick = () => {
+    setUserName();
+}
